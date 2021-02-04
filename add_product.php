@@ -65,7 +65,7 @@ $query .=
                     <select class="form-control" name="service">
                       <option value="">Select Service</option>
                     <?php  foreach ($all_categories as $cat): ?>
-                      <option value="<?php echo (int)$cat['id'] ?>">
+                      <option value="<?php echo (int)$cat['s_id'] ?>">
                         <?php echo $cat['s_name'] ?></option>
                     <?php endforeach; ?>
                     </select>

@@ -210,13 +210,9 @@ function tableExists($table){
    /*--------------------------------------------------------------*/
   function join_product_table(){
      global $db;
-     $sql  =" SELECT s.sp_id,s.patientId,
-     p.tbl_patient";
-      $sql  .=" AS tbl_patient,"; 
-    $sql .= "p.id as ID"; 
-    $sql  .=" FROM serviceprovided s";
-    $sql  .=" INNER JOIN tbl_patient p ON p.id = s.patientId "; 
-    $sql  .=" ORDER BY P.id ASC ";
+    $sql  = " SELECT id,name,Email,DOB,FirstVisit,Gender,COMMENTS
+    FROM tbl_patient 
+    ORDER BY id ASC ;";
     
     return find_by_sql($sql);
 

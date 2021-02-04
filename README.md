@@ -15,7 +15,7 @@ If you find any bug, and a fix for that bug, please leave a comment on the githu
 ****
 
 
-1. Download the latest version with git (`https://github.com/KirinyetBrian/`)
+1. Download the latest version with git (`https://github.com/KirinyetBrian/HEALTHRECORDMANAGEMENTSYSTEM`)
 
 2. Import/load health.sql into your mysql database. This should set up the basic structure of the database system.
 

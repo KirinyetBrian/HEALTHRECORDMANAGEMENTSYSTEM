@@ -61,7 +61,7 @@
         <div class="panel-body">
           <form method="post" action="categorie.php">
             <div class="form-group">
-                <input type="text" class="form-control" name="categorie-name" placeholder="Patiens Name">
+                <input type="text" class="form-control" name="categorie-name" placeholder="Patients Name">
                 <input type="text" class="form-control" name="NationalID" placeholder="NationalID">
                 <input type="text" class="form-control" name="Email" placeholder="Email">
                 <input type="text" class="form-control" name="Phone" placeholder="Phone">

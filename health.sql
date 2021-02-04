@@ -181,8 +181,8 @@ ALTER TABLE `user_groups`
 ALTER TABLE `tbl_patient`
   MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 
-  ALTER TABLE `serviceprovided`
-  MODIFY `s_id` int(11) unsigned NOT NULL AUTO_INCREMENT;
+ALTER TABLE `serviceprovided`
+  MODIFY `sp_id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `media`
 --
@@ -216,6 +216,8 @@ ALTER TABLE `user_groups`
 ALTER TABLE `serviceprovided`
   ADD CONSTRAINT `FK_products` FOREIGN KEY (`patientId`) REFERENCES `tbl_patient` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
+ALTER TABLE `serviceprovided`
+  ADD CONSTRAINT `FK_sp` FOREIGN KEY (`s_id`) REFERENCES `tbl_service` (`s_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 -- Constraints for table `users`
 --
 ALTER TABLE `users`

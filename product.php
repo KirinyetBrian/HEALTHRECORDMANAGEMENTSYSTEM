@@ -25,8 +25,8 @@
                 <th class="text-center" style="width: 10%;"> Name </th>
                 <th class="text-center" style="width: 10%;">D.O.B </th>
                 <th class="text-center" style="width: 10%;"> Gender </th>
-                <th class="text-center" style="width: 10%;"> Type of Service </th>
                 <th class="text-center" style="width: 10%;"> General Comments </th>
+                <th class="text-center" style="width: 10%;">Actions   </th>
                
               </tr>
             </thead>
@@ -38,7 +38,6 @@
                 <td class="text-center"> <?php echo remove_junk($product['name']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['DOB']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['Gender']); ?></td>
-                <td class="text-center"> <?php echo remove_junk($product['service']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['COMMENTS']); ?></td>
 
                 <td class="text-center">
